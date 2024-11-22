@@ -1,0 +1,77 @@
+body{
+    height: 100vh;
+    width: 100vw; 
+    margin: 0; 
+    overflow-x: hidden; 
+    overflow-y: auto; 
+} 
+header{ 
+    grid-area: h; 
+    background-color: gold; 
+    display: flex; 
+    justify-content: center;
+} 
+nav{ 
+    grid-area: n;  
+    background-color: black;
+} 
+section{ 
+    grid-area: t; 
+    background-color: blue;
+    color: white;
+}  
+section2{
+    grid-area: i; 
+    background-color: lightyellow;
+} 
+section3{ 
+    grid-area: a; 
+    background-color: #800020; 
+    color: white;
+} 
+section4{ 
+    grid-area: b; 
+    background-color: #E0E0E0; 
+    display: flex;
+    justify-content: center;
+} 
+section5{
+    grid-area: c; 
+    background-color: #333333; 
+    color: white;
+} 
+section6{
+    grid-area: d;
+    background-color: beige; 
+    color: white; 
+    display: flex; 
+    justify-content: center;
+} 
+section7{
+    grid-area: e; 
+    background-color: #00008B; 
+    color: white;
+} 
+section8{ 
+    grid-area: f; 
+    background-color: green; 
+    color: white;
+}
+#wrapper{ 
+    height: auto;
+    width: 100%; 
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 5% 150px 70px 100px 100px 100px 100px 100px; 
+    grid-template-areas: 
+        "h h"
+        "n n"
+        "t t"
+        "i i" 
+        "a a" 
+        "b b"
+        "c c"
+        "d d" 
+        "e e"
+        "f f";
+}

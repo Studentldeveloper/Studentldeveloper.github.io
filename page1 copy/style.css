@@ -1,0 +1,35 @@
+
+#ruta1{
+    width: 1920px;  
+    height: 300px;
+    background-color: red; 
+}    
+#ruta0{
+    width: 1920px; 
+    height: 200;
+    background-color:white; 
+}
+#ruta2{
+    width: 640px;
+    height:350px;
+    background-color: blue;
+    margin-right: 120px;
+} 
+#ruta3{
+    width: 1950px; 
+    height: 350px; 
+    background-color: green; 
+}   
+#ruta01{
+    width: 1920px;
+    height: 200;
+    background-color: white; 
+}
+#ruta4{
+    width: 1920px; 
+    height: 100px;
+    background-color: brown
+} 
+#container2{
+    display: flex    
+} 

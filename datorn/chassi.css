@@ -1,0 +1,62 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow-x: hidden; 
+    overflow-y: auto; 
+}
+
+header {
+    grid-area: h;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 10px;
+} 
+
+header .logo {
+    max-height: 100%;
+    max-width: 100%; 
+    height: auto;
+    border-radius: 5px;
+}
+
+nav {
+    grid-area: n;
+    background-color: orange;
+}
+
+section {
+    grid-area: t;
+    background-color: yellow;
+    padding: 20px; /* Lägg till padding för avstånd */
+    box-sizing: border-box; /* Gör att padding inte påverkar bredden */
+} 
+section2{
+    grid-area: i; 
+    background-color: white ; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    
+}
+#container{
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    transform: translateX(-100px);
+}
+
+#wrapper {
+    height: auto; /* Tillåter innehållet att växa naturligt */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 10% auto; /* Ändra sista raden till 'auto' för att passa innehåll */
+    grid-template-areas:
+        "h h"
+        "n n"
+        "t i" 
+        "t i";
+}
