@@ -1,0 +1,47 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    margin:0; 
+    overflow-x: hidden;
+    overflow-y: auto;
+} 
+header{
+    grid-area: h;
+    background-color: chocolate;
+    display: flex; 
+    justify-content: center;
+} header .logo{
+    max-height: 70%;
+    max-width: 70%;
+    height: auto;
+    border-radius: 5px;
+} 
+nav{
+    grid-area: n;
+    background-color: black;
+
+} 
+section{
+    grid-area: t;
+    background-color: coral;
+}  
+section2{
+    grid-area: m;
+    background-color: green;
+} 
+section3{
+    grid-area: r;
+    background-color: blue;
+}
+#wrapper{
+    height: auto;
+    width:100%; 
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: 5% 2% 200px auto; 
+    grid-template-areas: 
+        "h h"
+        "n n"
+        "t t" 
+        "m r";
+}

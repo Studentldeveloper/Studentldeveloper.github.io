@@ -56,13 +56,23 @@ section8{
     grid-area: f; 
     background-color: green; 
     color: white;
+} 
+section9{
+    grid-area: g; 
+    background-color: lightblue; 
+    color: black;
+} 
+section10{ 
+    grid-area: j; 
+    background-color: aliceblue; 
+    color: black;
 }
 #wrapper{ 
     height: auto;
     width: 100%; 
     display: grid; 
     grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 5% 150px 70px 100px 100px 100px 100px 100px; 
+    grid-template-rows: 10% 5% 150px 70px 100px 100px 100px 100px 100px 150px 650px; 
     grid-template-areas: 
         "h h"
         "n n"
@@ -73,5 +83,6 @@ section8{
         "c c"
         "d d" 
         "e e"
-        "f f";
+        "f f"
+        "g j";
 }

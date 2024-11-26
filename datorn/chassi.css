@@ -49,11 +49,11 @@ section2{
 }
 
 #wrapper {
-    height: auto; /* Tillåter innehållet att växa naturligt */
+    height: auto; 
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 10% auto; /* Ändra sista raden till 'auto' för att passa innehåll */
+    grid-template-rows: 10% 10% auto; 
     grid-template-areas:
         "h h"
         "n n"
